@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // soting of five numbers using swaping and print in ascending order
+    let a = parseInt(prompt("Enter a value"));
+    let b = parseInt(prompt("Enter a value"));
+    let c = parseInt(prompt("Enter a value"));
+    let d = parseInt(prompt("Enter a value"));
+    let e = parseInt(prompt("Enter a value"));
+    let result = 0;
+    // First, compare a and b and swap them if necessary
+    if (a > b) {
+        const temp = a;
+        a = b;
+        b = temp;
+    }
+
+    // Then, compare b and c and swap them if necessary
+    if (b > c) {
+        const temp = b;
+        b = c;
+        c = temp;
+
+        // We need to recheck a and b, since we swapped b and c
+        if (a > b) {
+            const temp = a;
+            a = b;
+            b = temp;
+        }
+    }
+
+    // Next, compare c and d and swap them if necessary
+    if (c > d) {
+        const temp = c;
+        c = d;
+        d = temp;
+        // We need to recheck b and c, since we swapped c and d
+        if (b > c) {
+            const temp = b;
+            b = c;
+            c = temp;
+
+            // We also need to recheck a and b, since we swapped b and c
+            if (a > b) {
+                const temp = a;
+                a = b;
+                b = temp;
+            }
+        }
+    }
+
+    // Finally, compare d and e and swap them if necessary
+    if (d > e) {
+        const temp = d;
+        d = e;
+        e = temp;
+
+        // We need to recheck c and d, since we swapped d and e
+        if (c > d) {
+            const temp = c;
+            c = d;
+            d = temp;
+
+            // We also need to recheck b and c, since we swapped c and d
+            if (b > c) {
+                const temp = b;
+                b = c;
+                c = temp;
+                // We also need to recheck a and b, since we swapped b and c
+                if (a > b) {
+                    const temp = a;
+                    a = b;
+                    b = temp;
+                }
+            }
+        }
+    }
+    // Now, a through e are sorted
+    document.write(a, b, c, d, e);
+    
+    
+
+    
+</script>
+
+</html>

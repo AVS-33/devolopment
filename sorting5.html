@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // sorting of five numbers
+    var a = prompt("enter the number:");
+    var b = prompt("enter the number:");
+    var c = prompt("enter the number:");
+    var d = prompt("enter the number:");
+    var e = prompt("enter the number:");
+    // condition if a is grater in first position
+    if(a>b && a>c && a>d && a>e){
+        // condition if b is grater in second position
+        if(b>c && b>d && b>e){
+            // condition if c is grater in third position
+            if(c>d && c>e){
+                // condition if d is grater in fourth position
+                if(d>e){
+                    document.write(a+","+b+","+c+","+d+","+e);
+                }
+                // condition if d is not grater in fourth position
+                else{
+                    document.write(a+","+c+","+b+","+e+","+d);
+                }
+            }
+            // codion if d i grater in third position
+            else if(d>c && d>e){
+                // condition if c is grater in fourth position
+                if(c>e){
+                    document.write(a+","+b+","+d+","+c+","+e);
+                }
+                // condition if c is not grater in fourth position
+                else{
+                    document.write(a+","+b+","+d+","+e+","+c);
+                }
+            }
+            // codion if e is grater in third position
+            else if(e>c && e>d){
+                // condition if c is grater in fourth position
+                if(c>d){
+                    document.write(a+","+b+","+e+","+c+","+d);
+                }
+                // condition if c is not grater in fourth position
+                else{
+                    document.write(a+","+b+","+e+","+d+","+c);
+                }
+            }
+
+        }
+        // codion if c is grater in second position
+        else if(c>b && c>d && c>e){
+            // condition if b is grater in third position
+            if(b>d && b>e){
+                // condition if d is grater in fourth position
+                if(d>e){
+                    document.write(a+","+c+","+b+","+d+","+e);
+                }
+                // condition if d is not grater in fourth position
+                else{
+                    document.write(a+","+c+","+b+","+e+","+d);
+                }
+            }
+            // codion if d is grater in third position
+            else if(d>b && d>e){
+                // condition if b is grater in fourth position
+                if(b>e){
+                    document.write(a+","+c+","+d+","+b+","+e);
+                }
+                // condition if b is not grater in fourth position
+                else{
+                    document.write(a+","+c+","+d+","+e+","+b);
+                }
+            }
+            // codion if e is grater in third position
+            else if(e>b && e>d){
+                // condition if b is grater in fourth position
+                if(b>d){
+                    document.write(a+","+c+","+e+","+b+","+d);
+                }
+                // condition if b is not grater in fourth position
+                else{
+                    document.write(a+","+c+","+e+","+d+","+b);
+                }
+            }
+
+        }
+        // codion if d is grater in second position
+        else if(d>b && d>c && d>e){
+            if(b>c && b>e){
+                if(c>e){
+                    document.write(a+","+d+","+b+","+c+","+e);
+                }
+                else{
+                    document.write(a+","+d+","+b+","+e+","+c);
+                }
+            }
+            else if(c>b && c>e){
+                if(b>e){
+                    document.write(a+","+d+","+c+","+b+","+e);
+                }
+                else{
+                    document.write(a+","+d+","+c+","+e+","+b);
+                }
+            }
+            else if(e>b && e>c){
+                if(b>c){
+                    document.write(a+","+d+","+e+","+b+","+c);
+                }
+                else{
+                    document.write(a+","+d+","+e+","+c+","+b);
+                }
+            }
+            
+        }
+        else if(e>b && e>c && e>d){
+            if(b>c && b>d){
+                if(c>d){
+                    document.write(a+","+e+","+b+","+c+","+d);
+                }
+                else{
+                    document.write(a+","+e+","+b+","+d+","+c);
+                }
+            }
+            else if(c>b && c>d){
+                if(b>d){
+                    document.write(a+","+e+","+c+","+b+","+d);
+                }
+                else{
+                    document.write(a+","+e+","+c+","+d+","+b);
+                }
+            }
+            else if(d>b && d>c){
+                if(b>c){
+                    document.write(a+","+e+","+d+","+b+","+c);
+                }
+                else{
+                    document.write(a+","+e+","+d+","+c+","+b);
+                }
+            }
+        }
+    }
+    else if(b>a && b>c && b>d && b>e){
+        if(a>c && a>d && a>e){
+            if(c>d && c>e){
+                if(d>e){
+                    document.write(b+","+a+","+c+","+d+","+e);
+                }
+                else{
+                    document.write(b+","+a+","+c+","+e+","+d);
+                }
+            }
+            else if(d>c && d>e){
+                if(c>e){
+                    document.write(b+","+a+","+d+","+c+","+e);
+                } 
+                else{
+                    document.write(b+","+a+","+d+","+e+","+c);
+                }
+            }
+            else if(e>c && e>d){
+                if(c>d){
+                    document.write(b+","+a+","+e+","+c+","+d);
+                }
+                else{
+                    document.write(b+","+a+","+e+","+d+","+c);
+                }
+            }
+        }
+        else if(c>a && c>d && c>e){
+            if(a>d && a>e){
+                if(d>e){
+                    document.write(b+","+c+","+a+","+d+","+e);
+                }
+                else{
+                    document.write(b+","+c+","+a+","+e+","+d);
+                }
+            }
+            else if(d>a && d>e){
+                if(a>e){
+                    document.write(b+","+c+","+d+","+a+","+e);
+                }
+                else{
+                    document.write(b+","+c+","+d+","+e+","+a);
+                }
+            }
+            else if(e>a && e>d){
+                if(a>d){
+                    document.write(b+","+c+","+e+","+a+","+d);
+                }
+                else{
+                    document.write(b+","+c+","+e+","+d+","+a);
+                }
+            }
+        }
+        else if(d>a && d>c && d>e){
+            if(a>c && a>e){
+                if(c>e){
+                    document.write(b+","+d+","+a+","+c+","+e);
+                }
+                else{
+                    document.write(b+","+d+","+a+","+e+","+c);
+                }
+            }
+            else if(c>a && c>e){
+                if(a>e){
+                    document.write(b+","+d+","+c+","+a+","+e);
+                }
+                else{
+                    
+                    document.write(b+","+d+","+c+","+e+","+a);
+                }
+            }
+            else if(e>a && e>c){
+                if(a>c){
+                    document.write(b+","+d+","+e+","+a+","+c);
+                }
+                else{
+                    document.write(b+","+d+","+e+","+c+","+a);
+                }
+            }
+        }
+        else if(e>a && e>c && e>d){
+            if(a>c && a>d){
+                if(c>d){
+                    document.write(b+","+e+","+a+","+c+","+d);
+                }
+                else{
+                    document.write(b+","+e+","+a+","+d+","+c);
+                }
+            }
+            else if(c>a && c>d){
+                if(a>d){
+                    document.write(b+","+e+","+c+","+a+","+d);
+                }
+                else{
+                    document.write(b+","+e+","+c+","+d+","+a);
+                }
+            }
+            else if(d>a && d>c){
+                if(a>c){
+                    document.write(b+","+e+","+d+","+a+","+c);
+                }
+                else{
+                    document.write(b+","+e+","+d+","+c+","+a);
+                }
+            }
+        }
+    }
+    // else if(c>a && c>b && c>d && c>e){
+    //     if(a>b && a>d && a>e){
+    //         if(b>d && b>e){
+    //             if(d>e){
+    //                 document.write(c+","+a+","+b+","+d+","+e);
+    //             }
+    //             else{
+    //                 document.write(c+","+a+","+b+","+e+","+d);
+    //             }
+    //         }
+    //         else if(d>b && d>e){
+    //             if(b>e){
+    //                 document.write(c+","+a+","+d+","+b+","+e);
+    //             }
+    //             else{
+    //                 document.write(c+","+a+","+d+","+e+","+b);
+    //             }
+    //         }
+    //         else if(e>b && e>d){
+    //             if(b>d){
+    //                 document.write(c+","+a+","+e+","+b+","+d);
+    //             }
+    //             else{
+    //                 document.write(c+","+a+","+e+","+d+","+b);
+    //             }
+    //         }
+    //     }
+    //     else if(b>a && b>d && b>e){
+    //         if(a>d && a>e){
+    //             if(d>e){
+    //                 document.write(c+","+b+","+a+","+d+","+e);
+    //             }
+    //             else{ 
+    //                 document.write(c+","+b+","+a+","+e+","+d);
+    //             }
+    //         }
+    //         else if(d>a && d>e){
+    //             if(a>e){
+    //                 document.write(c+","+b+","+d+","+a+","+e);
+    //             }
+    //             else{
+    //                 document.write(c+","+b+","+d+","+e+","+a);
+    //             }
+    //         }
+    //         else if(e>a && e>d){
+    //             if(a>d){
+    //                 document.write(c+","+b+","+e+","+a+","+d);
+    //             }
+    //             else{
+    //                 document.write(c+","+b+","+e+","+d+","+a);
+    //             }
+    //         }
+    //     }
+    //     else if(d>a && d>b && d>e){
+    //         if(a>b && a>e){
+    //             if(b>e){
+    //                 document.write(c+","+d+","+a+","+b+","+e);
+    //             }
+    //             else{
+    //                 document.write(c+","+d+","+a+","+e+","+b);  
+    //             }
+    //         }
+    //         else if(b>a && b>e){
+    //             if(a>e){
+    //                 document.write(c+","+d+","+b+","+a+","+e);
+    //             }
+    //             else{
+    //                 document.write(c+","+d+","+b+","+e+","+a);
+    //             }
+    //         }
+    //         else if(e>a && e>b){
+    //             if(a>b){
+    //                 document.write(c+","+d+","+e+","+a+","+b);
+    //             }
+    //             else{
+    //                 document.write(c+","+d+","+e+","+b+","+a);
+    //             }
+    //         }
+    //     }
+    //     else if(e>a && e>b && e>d){
+    //         if(a>b && a>d){
+    //             if(b>d){
+    //                 document.write(c+","+e+","+a+","+b+","+d);
+    //             }
+    //             else{
+    //                 document.write(c+","+e+","+a+","+d+","+b);
+    //             }
+    //         }
+    //         else if(b>a && b>d){
+    //             if(a>d){
+    //                 document.write(c+","+e+","+b+","+a+","+d);
+    //             }
+    //             else{
+    //                 document.write(c+","+e+","+b+","+d+","+a);
+    //             }
+    //         }
+    //         else if(d>a && d>b){
+    //             if(a>b){
+    //                 document.write(c+","+e+","+d+","+a+","+b);
+    //             }
+    //             else{
+    //                 document.write(c+","+e+","+d+","+b+","+a);
+    //             }
+    //         }
+    //     }
+    // }
+    // else if(d>a && d>b && d>c && d>e){
+    //     if(a>b && a>c && a>e){
+    //         if(b>c && b>e){
+    //             if(c>e){
+    //                 document.write(d+","+a+","+b+","+c+","+e);
+    //             }
+    //             else{
+    //                 document.write(d+","+a+","+b+","+e+","+c);
+    //             }
+    //         }
+    //         else if(c>b && c>e){
+    //             if(b>e){
+    //                 document.write(d+","+a+","+c+","+b+","+e);
+    //             }
+    //             else{
+    //                 document.write(d+","+a+","+c+","+e+","+b);
+    //             }
+    //         }
+    //         else if(e>b && e>c){
+    //             if(b>c){
+    //                 document.write(d+","+a+","+e+","+b+","+c);
+    //             }
+    //             else{
+    //                 document.write(d+","+a+","+e+","+c+","+b);
+    //             }
+    //         }
+    //     }
+    //     else if(b>a && b>c && b>e){
+    //         if(a>c && a>e){
+    //             if(c>e){
+    //                 document.write(d+","+b+","+a+","+c+","+e);
+    //             }
+    //             else{
+    //                 document.write(d+","+b+","+a+","+e+","+c);
+    //             }
+    //         }
+    //         else if(c>a && c>e){
+    //             if(a>e){
+    //                 document.write(d+","+b+","+c+","+a+","+e);
+    //             }
+    //             else{
+    //                 document.write(d+","+b+","+c+","+e+","+a);
+    //             }
+    //         }
+    //         else if(e>a && e>c){
+    //             if(a>c){
+    //                 document.write(d+","+b+","+e+","+a+","+c);
+    //             }
+    //             else{
+    //                 document.write(d+","+b+","+e+","+c+","+a);
+    //             }
+    //         }
+    //     }
+    //     else if(c>a && c>b && c>e){
+    //         if(a>b && a>e){
+    //             if(b>e){
+    //                 document.write(d+","+c+","+a+","+b+","+e);
+    //             }
+    //             else{
+    //                 document.write(d+","+c+","+a+","+e+","+b);
+    //             }
+    //         }
+    //         else if(b>a && b>e){
+    //             if(a>e){
+    //                 document.write(d+","+c+","+b+","+a+","+e);
+    //             }
+    //             else{
+    //                 document.write(d+","+c+","+b+","+e+","+a);
+    //             }
+    //         }
+    //         else if(e>a && e>b){
+    //             if(a>b){
+    //                 document.write(d+","+c+","+e+","+a+","+b);
+    //             }
+    //             else{
+    //                 document.write(d+","+c+","+e+","+b+","+a);
+    //             }
+    //         } 
+    //     }
+    //     else if(e>a && e>b && e>c){
+    //         if(a>b && a>c){
+    //             if(b>c){
+    //                 document.write(d+","+e+","+a+","+b+","+c);
+    //             }
+    //             else{
+    //                 document.write(d+","+e+","+a+","+c+","+b);
+    //             }
+    //         }
+    //         else if(b>a && b>c){
+    //                 if(a>c){
+    //                     document.write(d+","+e+","+b+","+a+","+c);
+    //                 }
+    //                 else{
+    //                     document.write(d+","+e+","+b+","+c+","+a);
+    //                 }
+    //         }
+    //         else if(c>a && c>b){
+    //             if(a>b){
+    //                 document.write(d+","+e+","+c+","+a+","+b);
+    //             }
+    //             else{
+    //                 document.write(d+","+e+","+c+","+b+","+a);
+    //             }
+    //         }
+    //     }
+    // }
+    // else if(e>a && e>b && e>c && e>c){
+    //     if(a>b && a>c && a>e){
+    //         if(b>c && b>e){
+    //             if(c>e){
+    //                 document.write(d+","+e+","+a+","+b+","+c);
+    //             }
+    //             else{
+    //                 document.write(d+","+e+","+a+","+c+","+e);
+    //             }
+    //         }
+    //         else if(c>b && c>e){
+    //             if(b>e){
+    //                 document.write(d+","+e+","+c+","+b+","+e);
+    //             }
+    //             else{
+    //                 document.write(d+","+e+","+c+","+e+","+b);
+    //             }
+    //         }
+    //         else if(e>b && e>c){
+    //             if(b>c){
+    //                 document.write(d+","+e+","+e+","+b+","+c);
+    //             }
+    //             else{
+    //                 document.write(d+","+e+","+e+","+c+","+b);
+    //             }
+    //         }
+    //     }
+    //     else if(b>a && b>c && b>e){
+    //         if(a>c && a>e){
+    //             if(c>e){
+    //                 document.write(d+","+b+","+a+","+c+","+e);
+    //             }
+    //             else{
+    //                 document.write(d+","+b+","+a+","+e+","+c);
+    //             }
+    //         }
+    //         else if(c>a && c>e){
+    //             if(a>e){
+    //                 document.write(d+","+b+","+c+","+a+","+e);
+    //             }
+    //             else{
+    //                 document.write(d+","+b+","+c+","+e+","+a);
+    //             }
+    //         }
+    //         else if(e>a && e>c){
+    //             if(a>c){
+    //                 document.write(d+","+b+","+e+","+a+","+c);
+    //             }
+    //             else{
+    //                 document.write(d+","+b+","+e+","+c+","+a);
+    //             }
+    //         }
+
+    //     }
+    //     else if(c>a && c>b && c>e){
+    //         if(a>b && a>e){
+    //             if(b>e){
+    //                 document.write(d+","+c+","+a+","+b+","+e);
+    //             }
+    //             else{
+    //                 document.write(d+","+c+","+a+","+e+","+b);
+    //             }
+    //         }
+    //         else if(b>a && b>e){
+    //             if(a>e){
+    //                 document.write(d+","+c+","+b+","+a+","+e);
+    //             }
+    //             else{
+    //                 document.write(d+","+c+","+b+","+e+","+a);
+    //             }
+    //         }
+    //         else if(e>a && e>b){
+    //             if(a>b){
+    //                 document.write(d+","+c+","+e+","+a+","+b);
+    //             }
+    //             else{
+    //                 document.write(d+","+c+","+e+","+b+","+a);
+    //             }
+    //         }
+    //     }
+    //     else if(e>a && e>b && e>c){
+    //         if(a>b && a>c){
+                
+    //         }
+    //     }
+    // } 
+</script>
+</html>
